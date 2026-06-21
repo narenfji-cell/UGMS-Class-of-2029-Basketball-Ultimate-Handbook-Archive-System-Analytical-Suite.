@@ -1,1 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UGMS Class of 2029 Basketball Ultimate Handbook & Analytical Suite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="app-header">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1 class="main-title">UNIVERSITY OF GHANA MEDICAL SCHOOL</h1>
+            <h2 class="sub-title">CLASS OF 2029 • BASKETBALL HANDBOOK & ANALYTICAL SUITE</h2>
+            <p class="motto">"Every team has stars. Not every team has stars that complement each other."</p>
+        </div>
+    </header>
+
+    <nav class="sticky-nav">
+        <ul class="nav-links">
+            <li><a href="#roster-section" class="nav-tab active">1. Roster & Cards</a></li>
+            <li><a href="#analytics-section" class="nav-tab">2. Analytical Suite</a></li>
+            <li><a href="#matchup-section" class="nav-tab">3. Team & Matchup Creator</a></li>
+            <li><a href="#tournament-section" class="nav-tab">4. Tournament Hub</a></li>
+            <li><a href="#archives-section" class="nav-tab">5. Career Archives</a></li>
+            <li><a href="#timeline-section" class="nav-tab">6. Timeline History</a></li>
+            <li><a href="#admin-section" class="nav-tab" id="admin-nav-indicator">7. Admin Gate 🔒</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-container">
+
+        <section id="roster-section" class="app-section">
+            <div class="section-header-block">
+                <h3 class="section-title"><span class="accent-cyan">01 /</span> DIGITAL TRADING CARD ROSTER</h3>
+                <p class="section-desc">Interact with the 3D flippable tracking matrices. Run custom AI career development modules live.</p>
+            </div>
+            <div id="roster-grid" class="roster-grid-container"></div>
+        </section>
+
+        <section id="analytics-section" class="app-section">
+            <div class="section-header-block">
+                <h3 class="section-title"><span class="accent-orange">02 /</span> ARCHETYPE ANALYTICAL SUITE</h3>
+                <p class="section-desc">Class rating thresholds mapping mathematical distributions against Tier Distributions.</p>
+            </div>
+            <div class="analytics-dashboard-grid">
+                <div class="analytics-card metric-box">
+                    <h4>Roster Rating Metrics</h4>
+                    <div id="analytics-summary" class="metrics-summary-container"></div>
+                </div>
+                <div class="analytics-card hierarchy-box">
+                    <h4>Tier Scale Distributions</h4>
+                    <ul class="tier-legend-list">
+                        <li><span class="tier-tag diamond">Diamond</span> 90+ Elite</li>
+                        <li><span class="tier-tag amethyst">Amethyst</span> 85-89 Excellent</li>
+                        <li><span class="tier-tag sapphire">Sapphire</span> 80-84 Good</li>
+                        <li><span class="tier-tag gold">Gold</span> 70-79 Developing</li>
+                        <li><span class="tier-tag bronze">Bronze</span> &lt;60 Raw</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="matchup-section" class="app-section">
+            <div class="section-header-block">
+                <h3 class="section-title"><span class="accent-gold">03 /</span> TEAM METRIC SYNTHESIZER & AI MATCHUP CONSOLE</h3>
+                <p class="section-desc">Configure architectural setups across custom roster sizes. Process advanced simulation diagnostics.</p>
+            </div>
+            
+            <div class="matchup-setup-controls">
+                <label for="matchup-size-select" class="neon-label">Matchup Format Scale: </label>
+                <select id="matchup-size-select" class="neon-select">
+                    <option value="1">1v1 Format</option>
+                    <option value="2">2v2 Format</option>
+                    <option value="3" selected>3v3 Format</option>
+                    <option value="4">4v4 Format</option>
+                    <option value="5">5v5 Format</option>
+                </select>
+            </div>
+
+            <div class="matchup-workspace-grid">
+                <div class="team-workspace-card" id="team-a-card">
+                    <h4 class="team-title-banner cyan-banner">TEAM ALPHA</h4>
+                    <div class="team-selectors-container" id="team-a-selectors"></div>
+                    <div class="collage-preview-window">
+                        <h5>Team Collage Lineup</h5>
+                        <div class="collage-grid" id="team-a-collage"></div>
+                    </div>
+                    <div class="team-stats-synthesizer-output" id="team-a-metrics"></div>
+                </div>
+
+                <div class="vs-divider-container">
+                    <div class="vs-circle">VS</div>
+                    <button id="run-simulation-btn" class="action-btn action-neon-orange">Run Prospective Match Simulation</button>
+                </div>
+
+                <div class="team-workspace-card" id="team-b-card">
+                    <h4 class="team-title-banner orange-banner">TEAM OMEGA</h4>
+                    <div class="team-selectors-container" id="team-b-selectors"></div>
+                    <div class="collage-preview-window">
+                        <h5>Team Collage Lineup</h5>
+                        <div class="collage-grid" id="team-b-collage"></div>
+                    </div>
+                    <div class="team-stats-synthesizer-output" id="team-b-metrics"></div>
+                </div>
+            </div>
+
+            <div id="simulation-report-modal" class="simulation-report-holder hidden">
+                <div class="report-header">
+                    <h4>PROSPECTIVE ALGORITHMIC MATCH SIMULATION CONSOLE REPORT</h4>
+                    <button id="close-report-btn" class="close-text-btn">&times;</button>
+                </div>
+                <div id="simulation-report-content" class="report-body"></div>
+            </div>
+        </section>
+
+        <section id="tournament-section" class="app-section">
+            <div class="section-header-block">
+                <h3 class="section-title"><span class="accent-purple">04 /</span> OPEN TOURNAMENT GENERATOR</h3>
+                <p class="section-desc">Configure, compute, and advance live tournament brackets with direct public logging entry points.</p>
+            </div>
+
+            <div class="tournament-wizard-box">
+                <h4>Tournament Setup Configuration</h4>
+                <div class="wizard-row">
+                    <div class="wizard-field">
+                        <label>Tournament Type</label>
+                        <select id="tourney-type" class="neon-select">
+                            <option value="Regular Elimination">Regular Elimination Tournament</option>
+                            <option value="Three-Point Contest">Three-Point Contest</option>
+                            <option value="Custom Milestone">Custom Milestone Showcase</option>
+                        </select>
+                    </div>
+                    <div class="wizard-field">
+                        <label>Lineup Format</label>
+                        <select id="tourney-format" class="neon-select">
+                            <option value="3v3">3v3 Format</option>
+                            <option value="4v4">4v4 Format</option>
+                            <option value="5v5" selected>5v5 Format</option>
+                        </select>
+                    </div>
+                    <div class="wizard-field">
+                        <label>MVP Determination Rule</label>
+                        <input type="text" id="tourney-mvp-rule" class="neon-input" value="Highest Eff + Championship Win">
+                    </div>
+                    <button id="initialize-tourney-btn" class="action-btn action-neon-cyan">Generate Bracket Tree</button>
+                </div>
+            </div>
+
+            <div id="active-tournament-workspace" class="active-tournament-workspace hidden">
+                <div class="bracket-tree-display" id="bracket-canvas"></div>
+                <div class="awards-showcase-container hidden" id="awards-showcase-box"></div>
+            </div>
+        </section>
+
+        <section id="archives-section" class="app-section">
+            <div class="section-header-block">
+                <h3 class="section-title"><span class="accent-cyan">05 /</span> MASTER CAREER ARCHIVES LEDGER</h3>
+                <p class="section-desc">Track real statistical performance arrays across Official, Unity, and UGMSA configurations.</p>
+            </div>
+
+            <div class="ledger-controls-row">
+                <div class="ledger-legend">
+                    <span class="badge-indicator">Interactive Column Fields (Click Headers to Sort)</span>
+                </div>
+                <div class="ledger-mode-toggle-block">
+                    <span id="ledger-mode-status" class="status-badge public-badge">Viewing Mode: Public (Read-Only)</span>
+                </div>
+            </div>
+
+            <div class="table-scroll-container">
+                <table class="master-ledger-table" id="ledger-table">
+                    <thead>
+                        <tr>
+                            <th>Portrait</th>
+                            <th class="sortable-header" data-sort="name">Player Name ↕</th>
+                            <th class="sortable-header" data-sort="ppg">PPG ↕</th>
+                            <th class="sortable-header" data-sort="apg">APG ↕</th>
+                            <th class="sortable-header" data-sort="rpg">RPG ↕</th>
+                            <th class="sortable-header" data-sort="bpg">BPG ↕</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ledger-table-body"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="timeline-section" class="app-section">
+            <div class="section-header-block">
+                <h3 class="section-title"><span class="accent-orange">06 /</span> HISTORICAL REPOSITORY & COACH MATRIX</h3>
+                <p class="section-desc">Chronological logs of key moments alongside strategic tracking visualizations.</p>
+            </div>
+
+            <div class="timeline-coach-hybrid-grid">
+                <div class="timeline-feed-wrapper">
+                    <h4>Historical Milestone Log Feed</h4>
+                    <div id="timeline-feed" class="timeline-canvas-feed"></div>
+                </div>
+
+                <div class="coach-matrix-wrapper">
+                    <h4>Strategic Coordinator Matrix</h4>
+                    <div class="coach-card-profile" id="coach-profile-card">
+                        <div class="coach-identity-row">
+                            <div class="coach-avatar-silhouette" id="coach-photo-view">🏀</div>
+                            <div>
+                                <h5 id="coach-display-name">Coach Lead Architect</h5>
+                                <p id="coach-display-role">Head Strategic Coordinator</p>
+                            </div>
+                        </div>
+                        
+                        <div class="svg-matrix-container">
+                            <svg viewBox="0 0 500 200" class="interactive-svg-canvas">
+                                <path d="M 50 150 L 170 80 L 300 120 L 440 40" fill="none" stroke="#00e5ff" stroke-width="4" />
+                                <circle cx="50" cy="150" r="8" class="svg-interactive-node" data-node="0" />
+                                <circle cx="170" cy="80" r="8" class="svg-interactive-node" data-node="1" />
+                                <circle cx="300" cy="120" r="8" class="svg-interactive-node" data-node="2" />
+                                <circle cx="440" cy="40" r="8" class="svg-interactive-node" data-node="3" />
+                                <text x="50" y="180" class="svg-node-lbl">Tactics</text>
+                                <text x="170" y="55" class="svg-node-lbl">Synergy</text>
+                                <text x="300" y="150" class="svg-node-lbl">Roster</text>
+                                <text x="440" y="25" class="svg-node-lbl">Output</text>
+                            </svg>
+                        </div>
+                        
+                        <div class="matrix-info-panel" id="matrix-node-info-panel">
+                            <p class="panel-placeholder-txt">Hover or tap on any matrix node path element to view active strategic analytics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="admin-section" class="app-section">
+            <div class="section-header-block">
+                <h3 class="section-title"><span class="accent-gold">07 /</span> ADMINISTRATIVE SECURITY PASS-GATE</h3>
+                <p class="section-desc">Gain core management clearance to perform real-time hybrid CRUD pipeline operations.</p>
+            </div>
+
+            <div id="admin-login-overlay" class="admin-login-overlay-box">
+                <div class="lock-icon-shield">🔒</div>
+                <h4>Administrative Clearance Verification Required</h4>
+                <p class="lock-sub">Input system operational code token to modify parameters</p>
+                <div class="login-input-row">
+                    <input type="password" id="admin-passphrase-field" class="neon-input" placeholder="Enter System Password">
+                    <button id="admin-login-submit-btn" class="action-btn action-neon-orange">Unlock System</button>
+                </div>
+                <p id="login-error-output" class="error-msg-text hidden">Invalid System operational code token!</p>
+            </div>
+
+            <div id="admin-unlocked-suite" class="admin-unlocked-suite-panel hidden">
+                <div class="admin-success-banner">✓ SYSTEM ACCESS GRANTED • AUTHORIZED ADMINISTRATIVE PRIVILEGES ACTIVE</div>
+                
+                <div class="crud-management-grid">
+                    <div class="crud-form-card">
+                        <h4 id="form-pipeline-title">Add / Edit Player Management Pipeline</h4>
+                        
+                        <div class="form-row-split">
+                            <div class="form-field-block">
+                                <label for="player-selection-dropdown" class="neon-label">Select Action Profile Target</label>
+                                <select id="player-selection-dropdown" class="neon-select">
+                                    <option value="NEW_PLAYER">-- CREATE NEW PLAYER PROFILE --</option>
+                                </select>
+                            </div>
+                            <div class="form-field-block">
+                                <label class="neon-label">Upload Profile Photo</label>
+                                <input type="file" id="player-photo-uploader" class="file-uploader-neon" accept="image/*">
+                            </div>
+                        </div>
+
+                        <div class="form-row-split">
+                            <div class="form-field-block">
+                                <label for="field-name" class="neon-label">Full Name</label>
+                                <input type="text" id="field-name" class="neon-input" placeholder="e.g. John Doe">
+                            </div>
+                            <div class="form-field-block">
+                                <label for="field-position" class="neon-label">Position / Archetype Map</label>
+                                <input type="text" id="field-position" class="neon-input" placeholder="e.g. PG / SG">
+                            </div>
+                        </div>
+
+                        <div class="form-row-three">
+                            <div class="form-field-block">
+                                <label for="field-ovr" class="neon-label">Overall Rating (OVR)</label>
+                                <input type="number" id="field-ovr" class="neon-input" min="1" max="99" value="80">
+                            </div>
+                            <div class="form-field-block">
+                                <label for="field-height" class="neon-label">Height (ft/in)</label>
+                                <input type="text" id="field-height" class="neon-input" placeholder="6'1&quot;">
+                            </div>
+                            <div class="form-field-block">
+                                <label for="field-weight" class="neon-label">Weight (lbs)</label>
+                                <input type="text" id="field-weight" class="neon-input" placeholder="180 lbs">
+                            </div>
+                        </div>
+
+                        <div class="form-row-three">
+                            <div class="form-field-block">
+                                <label for="field-handed" class="neon-label">Handedness</label>
+                                <input type="text" id="field-handed" class="neon-input" placeholder="Right">
+                            </div>
+                            <div class="form-field-block">
+                                <label for="field-nbacomparison" class="neon-label">NBA Comparison Pro</label>
+                                <input type="text" id="field-nbacomparison" class="neon-input" placeholder="e.g. Stephen Curry">
+                            </div>
+                            <div class="form-field-block">
+                                <label for="field-keyfocus" class="neon-label">Key Focus Stat Field</label>
+                                <input type="text" id="field-keyfocus" class="neon-input" placeholder="e.g. Clutch Rating: 90">
+                            </div>
+                        </div>
+
+                        <div class="form-row-three">
+                            <div class="form-field-block">
+                                <label for="stat-speed" class="neon-label">Speed Rating</label>
+                                <input type="number" id="stat-speed" class="neon-input" min="1" max="100" value="75">
+                            </div>
+                            <div class="form-field-block">
+                                <label for="stat-defense" class="neon-label">Defense Rating</label>
+                                <input type="number" id="stat-defense" class="neon-input" min="1" max="100" value="75">
+                            </div>
+                            <div class="form-field-block">
+                                <label for="stat-shooting" class="neon-label">Shooting Rating</label>
+                                <input type="number" id="stat-shooting" class="neon-input" min="1" max="100" value="75">
+                            </div>
+                        </div>
+
+                        <div class="form-field-block">
+                            <label for="field-history" class="neon-label">Historical Milestones & Awards Bio Log (Comma Separated)</label>
+                            <input type="text" id="field-history" class="neon-input" placeholder="Fastest Player, All-Class First Team">
+                        </div>
+
+                        <div class="form-actions-row">
+                            <button id="save-player-btn" class="action-btn action-neon-cyan">Save Profile To Database</button>
+                            <button id="remove-player-btn" class="action-btn action-neon-red hidden">Purge Player Record</button>
+                        </div>
+                    </div>
+
+                    <div class="crud-form-card">
+                        <h4>Timeline Event & Strategic Management Pipeline</h4>
+                        <div class="form-field-block">
+                            <label class="neon-label">Event/Milestone Title</label>
+                            <input type="text" id="hist-title" class="neon-input" placeholder="Momentum Shift Vector Title">
+                        </div>
+                        <div class="form-row-split">
+                            <div class="form-field-block">
+                                <label class="neon-label">Chronological Calendar Date</label>
+                                <input type="text" id="hist-date" class="neon-input" placeholder="e.g. June 2026">
+                            </div>
+                            <div class="form-field-block">
+                                <label class="neon-label">Match Operational Box Scores</label>
+                                <input type="text" id="hist-scores" class="neon-input" placeholder="e.g. 45 - 42 vs Class of 2027">
+                            </div>
+                        </div>
+                        <div class="form-field-block">
+                            <label class="neon-label">Storyline/Narrative Arc Summary</label>
+                            <textarea id="hist-desc" class="neon-textarea" placeholder="Provide full systemic breakdown detailing strategies and historical impacts..."></textarea>
+                        </div>
+                        <div class="form-field-block">
+                            <label class="neon-label">Upload Event Collage Images</label>
+                            <input type="file" id="hist-photos-uploader" class="file-uploader-neon" multiple accept="image/*">
+                        </div>
+                        <div class="form-actions-row">
+                            <button id="save-history-btn" class="action-btn action-neon-orange">Publish Timeline Event Card</button>
+                        </div>
+
+                        <hr class="form-divider">
+
+                        <h4>Coach Profile Strategic Interface Override</h4>
+                        <div class="form-row-split">
+                            <div class="form-field-block">
+                                <label class="neon-label">Coordinator Strategic Name Target</label>
+                                <input type="text" id="coach-edit-name" class="neon-input" value="Coach Lead Architect">
+                            </div>
+                            <div class="form-field-block">
+                                <label class="neon-label">Operational Tactical Role</label>
+                                <input type="text" id="coach-edit-role" class="neon-input" value="Head Strategic Coordinator">
+                            </div>
+                        </div>
+                        <button id="save-coach-override-btn" class="action-btn action-neon-purple">Override Strategic Coordinator Bio</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="app-footer-bar">
+        <p>&copy; 2026 University of Ghana Medical School (UGMS) Class of 2029 Basketball Statistical Operations Suite.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
 
